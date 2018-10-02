@@ -16,6 +16,9 @@ public class App {
 		System.out.println(P003.Solution(600851475143L));
 		System.out.println("----------P004---------------");
 		P004.Solution();
+		System.out.println("----------P005---------------");
+		P005.Solution();
+
 		/*-----------------------------------------------------*/
 		long lEndTime = System.nanoTime();
 		long output = lEndTime - lStartTime;
