@@ -31,26 +31,26 @@ public class P003 {
 		}
 		return n;
 	}
-	
+
 	/**
 	 * 
 	 * @param number
 	 * @return
 	 */
 	public static int Solution(Long number) {
-        int result = 0;
-        while (number != 1) {
-            for (int i = 2; i <= number; i++) {
-                if (number % i == 0) {
-                    number = number / i;
-                    if(result < i){
-                        result = i;
-                    }
-                   break;
-                }   
-            }
-        }
-        return result;
-    }
+		int result = 0;
+		while (number != 1) {
+			for (int i = 2; i <= number; i++) {
+				if (number % i == 0) {
+					number = number / i;
+					if (result < i) {
+						result = i;
+					}
+					break;
+				}
+			}
+		}
+		return result;
+	}
 
 }
