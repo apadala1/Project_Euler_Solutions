@@ -17,19 +17,10 @@ public class P003 {
 	public static void Solution() {
 		long n = 600851475143L, d = 0l;
 		while (d < n) {
-			d = smallestFactor(n);
+			d = Util.smallestFactor(n);
 			n /= d;
 		}
 		System.out.println(d);
-	}
-
-	private static long smallestFactor(long n) {
-		int limit = (int) Math.sqrt(n);
-		for (long i = 2; i <= limit; i++) {
-			if (n % i == 0)
-				return i;
-		}
-		return n;
 	}
 
 	/**
