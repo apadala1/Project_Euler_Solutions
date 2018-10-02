@@ -12,9 +12,14 @@ public class App {
 		System.out.println("----------P002---------------");
 		P002.Solution();
 		System.out.println("----------P003---------------");
+		P003.Solution();
+		System.out.println(P003.Solution(600851475143L));
+		
+		/*-----------------------------------------------------*/
 		long lEndTime = System.nanoTime();
 		long output = lEndTime - lStartTime;
 		System.out.println("\nElapsed time in milliseconds: " + output);
 	}
+
+
 }
- 
