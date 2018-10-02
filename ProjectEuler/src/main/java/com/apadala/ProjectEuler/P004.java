@@ -8,7 +8,7 @@ package com.apadala.ProjectEuler;
  *
  */
 public class P004 {
-//	final static int NUM = 999;
+	// final static int NUM = 999;
 
 	public static void Solution() {
 		System.out.println(Solution(999));
@@ -21,18 +21,16 @@ public class P004 {
 	 */
 	public static int Solution(int NUM) {
 
-		int res = 0, max = 0;
+		int max = 0;
 		for (int j = NUM; j > 100; j--) {
 			for (int i = NUM; i > NUM - 200; i--) {
+				if (i * j < max)
+					break;
+				if (Util.palindrome(i * j) && i * j > max) {
 
-				if (Util.palindrome(i * j)) {
-
-					res = i * j;
-					if (res > max) {
-						max = res;
-					}
-
+					max = i * j;
 				}
+
 			}
 
 		}
