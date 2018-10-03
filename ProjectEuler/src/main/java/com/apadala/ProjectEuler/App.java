@@ -7,7 +7,7 @@ package com.apadala.ProjectEuler;
 public class App {
 	public static void main(String[] args) {
 		long lStartTime = System.nanoTime();
-		System.out.println("----------P001---------------");
+		/*System.out.println("----------P001---------------");
 		P001.Solution();
 		System.out.println("----------P002---------------");
 		P002.Solution();
@@ -20,6 +20,11 @@ public class App {
 		P005.Solution();
 		System.out.println("----------P006---------------");
 		P006.Solution();
+		System.out.println("----------P007---------------");
+		P007.Solution();
+		System.out.println("----------P008---------------");
+		P008.Solution();*/
+		
 
 		/*-----------------------------------------------------*/
 		long lEndTime = System.nanoTime();
