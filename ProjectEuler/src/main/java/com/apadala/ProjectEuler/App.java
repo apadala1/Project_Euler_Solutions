@@ -18,6 +18,8 @@ public class App {
 		P004.Solution();
 		System.out.println("----------P005---------------");
 		P005.Solution();
+		System.out.println("----------P006---------------");
+		P006.Solution();
 
 		/*-----------------------------------------------------*/
 		long lEndTime = System.nanoTime();

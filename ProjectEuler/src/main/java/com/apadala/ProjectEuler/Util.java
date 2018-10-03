@@ -39,4 +39,14 @@ public class Util {
 		}
 		return n;
 	}
+
+	/**
+	 * @param i
+	 * @return
+	 */
+	public static long square(long i) {
+		// TODO Auto-generated method stub
+
+		return i * i;
+	}
 }
