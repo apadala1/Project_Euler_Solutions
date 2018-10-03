@@ -14,6 +14,9 @@ public class Util {
 	 * @return
 	 */
 	public static boolean palindrome(int n) {
+		if (n < 0) {
+			throw new IllegalArgumentException("Primes are positive");
+		}
 		int rev = 0, temp = n, sum = 0;
 		while (temp > 0) {
 			rev = temp % 10;
@@ -32,6 +35,9 @@ public class Util {
 	 * @return
 	 */
 	public static long smallestFactor(long n) {
+		if (n < 0) {
+			throw new IllegalArgumentException("Primes are positive");
+		}
 		int limit = (int) Math.sqrt(n);
 		for (long i = 2; i <= limit; i++) {
 			if (n % i == 0)
@@ -55,11 +61,22 @@ public class Util {
 	 * @return
 	 */
 	public static boolean isPrime(long n) {
+		if (n < 0) {
+			throw new IllegalArgumentException("Primes are positive");
+		}
+		if (n < 2)
+			return false;
+		if (n < 4)
+			return true;
 
 		if (n % 2 == 0)
 			return false;
+		if (n % 3 == 0)
+			return false;
+		if (n < 9)
+			return true;
 
-		for (int i = 3; i <= Math.sqrt(n); i += 2) {
+		for (long i = 3; i <= Math.sqrt(n); i += 2) {
 			if (n % i == 0)
 				return false;
 		}
