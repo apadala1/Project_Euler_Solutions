@@ -5,24 +5,31 @@ package com.apadala.ProjectEuler;
  *
  */
 public class App {
+
+	static int n = 12;
 	public static void main(String[] args) {
 		long lStartTime = System.nanoTime();
-		/*
-		 * System.out.println("----------P001---------------"); P001.Solution();
-		 * System.out.println("----------P002---------------"); P002.Solution();
-		 * System.out.println("----------P003---------------"); P003.Solution();
-		 * System.out.println(P003.Solution(600851475143L));
-		 * System.out.println("----------P004---------------"); P004.Solution();
-		 * System.out.println("----------P005---------------"); P005.Solution();
-		 * System.out.println("----------P006---------------"); P006.Solution();
-		 * System.out.println("----------P007---------------"); P007.Solution();
-		 * System.out.println("----------P008---------------"); P008.Solution();
-		 * System.out.println("----------P009---------------"); P009.Solution();
-		 */
-		System.out.println("----------P010---------------");
-		P010.Solution();
 
-		/*-----------------------------------------------------*/
+		@SuppressWarnings("rawtypes")
+		Class cls = null;
+
+		for (int i = 1; i <= n; i++) {
+
+			String className = "P" + i;
+
+			String fullPathOfTheClass = "com.apadala.ProjectEuler." + className;
+			System.out.println("----------" + className + "---------------");
+			try {
+
+				cls = Class.forName(fullPathOfTheClass);
+				PEuler myTestObject = (PEuler) cls.newInstance();
+				System.out.println(myTestObject.Solution());
+			} catch (Exception e) {
+				System.out.println("No solution for project =" + e);
+			}
+
+		}
+
 		long lEndTime = System.nanoTime();
 		long output = lEndTime - lStartTime;
 		System.out.println(

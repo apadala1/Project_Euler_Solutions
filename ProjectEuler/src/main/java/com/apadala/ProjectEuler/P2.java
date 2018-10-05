@@ -14,10 +14,10 @@ package com.apadala.ProjectEuler;
  * By considering the terms in the Fibonacci sequence whose values do not exceed
  * four million, find the sum of the even-valued terms.
  */
-public class P002 {
+public class P2 implements PEuler {
 	static int MILLION = 4000000;
 
-	public static void Solution() {
+	public String Solution() {
 		int f = 1, las = 2, sum = 0;
 
 		long sumofalleven = las;
@@ -30,7 +30,7 @@ public class P002 {
 				sumofalleven += sum;
 			}
 		}
-		System.out.println(sumofalleven);
+		return Long.toString(sumofalleven);
 	}
 
 }

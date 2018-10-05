@@ -15,9 +15,9 @@ import java.util.ArrayList;
  * 
  * What is the 10 001st prime number?
  */
-public class P007 {
-	public static void Solution() {
-		System.out.println(Solution(10001));
+public class P7 implements PEuler {
+	public String Solution() {
+		return Long.toString(Solution(10001));
 	}
 
 	/**

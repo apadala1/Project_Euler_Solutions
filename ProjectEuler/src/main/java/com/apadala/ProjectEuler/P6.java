@@ -20,9 +20,9 @@ package com.apadala.ProjectEuler;
  * Find the difference between the sum of the squares of the first one hundred
  * natural numbers and the square of the sum.
  */
-public class P006 {
-	public static void Solution() {
-		System.out.println(Solution(100));
+public class P6 implements PEuler {
+	public String Solution() {
+		return Long.toString(Solution(100));
 	}
 
 	/**

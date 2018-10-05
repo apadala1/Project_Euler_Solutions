@@ -12,16 +12,16 @@ package com.apadala.ProjectEuler;
  * 
  * Find the sum of all the primes below two million.
  */
-public class P010 {
+public class P10 implements PEuler {
 	public static int tmillion = 2000000;
-	public static void Solution() {
+	public String Solution() {
 		long sum = 2;
 		for (int i = 3; i < tmillion; i = i + 2) {
 			if (Util.isPrime(i)) {
 				sum += i;
 			}
 		}
-		System.out.println(sum);
+		return Long.toString(sum);
 	}
 
 }

@@ -13,11 +13,12 @@ package com.apadala.ProjectEuler;
  * 
  * What is the smallest positive number that is evenly divisible by all of the
  */
-public class P005 {
+public class P5 implements PEuler {
 	/**
+	 * @return
 	 * 
 	 */
-	public static void Solution() {
+	public String Solution() {
 		int j = 2;
 		for (int i = 20;; i += 2) {
 			for (j = 2; j < 21; j++) {
@@ -27,8 +28,8 @@ public class P005 {
 			}
 
 			if (j == 21) {
-				System.out.println(i);
-				break;
+				return Integer.toString(i);
+
 			}
 		}
 	}

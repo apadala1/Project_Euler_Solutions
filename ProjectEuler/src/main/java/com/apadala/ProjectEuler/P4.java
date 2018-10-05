@@ -13,11 +13,11 @@ package com.apadala.ProjectEuler;
  * 
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
-public class P004 {
+public class P4 implements PEuler {
 	// final static int NUM = 999;
 
-	public static void Solution() {
-		System.out.println(Solution(999));
+	public String Solution() {
+		return Integer.toString(Solution(999));
 	}
 
 	/**

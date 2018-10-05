@@ -16,11 +16,11 @@ package com.apadala.ProjectEuler;
  * There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find
  * the product abc.
  */
-public class P009 {
+public class P9 implements PEuler {
 	/*
 	 * heard coded brute force
 	 */
-	public static void Solution() {
+	public String Solution() {
 		int k = 0;
 		for (int i = 1; i < 1000; i++) {
 			for (int j = i + 1; j < 1000; j++) {
@@ -28,11 +28,12 @@ public class P009 {
 				if (i + j + k == 1000) {
 					if (i * i + j * j == k * k)
 
-						System.out.println(i * j * k);
+						return Integer.toString(i * j * k);
 
 				}
 
 			}
 		}
+		return null;
 	}
 }

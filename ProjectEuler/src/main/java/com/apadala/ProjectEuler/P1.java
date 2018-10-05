@@ -11,10 +11,10 @@ package com.apadala.ProjectEuler;
  * 
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
-public class P001 {
+public class P1 implements PEuler {
 	final int N = 1000;
 
-	public static void Solution() {
+	public String Solution() {
 
 		int sum = 0;
 		for (int i = 1; i < 1000; i++) {
@@ -23,7 +23,7 @@ public class P001 {
 
 			}
 		}
-		System.out.println(sum);
+		return Integer.toString(sum);
 	}
 
 }

@@ -12,15 +12,15 @@ package com.apadala.ProjectEuler;
  * 
  * What is the largest prime factor of the number 600851475143 ?
  */
-public class P003 {
+public class P3 implements PEuler {
 
-	public static void Solution() {
+	public String Solution() {
 		long n = 600851475143L, d = 0l;
 		while (d < n) {
 			d = Util.smallestFactor(n);
 			n /= d;
 		}
-		System.out.println(d);
+		return Long.toString(d);
 	}
 
 	/**
