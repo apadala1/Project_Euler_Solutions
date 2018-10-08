@@ -3,6 +3,9 @@
  */
 package com.apadala.ProjectEuler;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * @author Akhileshwar.Padala
  *
@@ -83,4 +86,18 @@ public class Util {
 		return true;
 
 	}
+	public static long SumOfN(long n) {
+		return (n * (n + 1) / 2);
+	}
+	public static Long factorsOfN(long n) {
+		long c = 0;
+
+		for (long i = 1; i < Math.sqrt(n); i++) {
+			if (n % i == 0)
+				c += 2;
+		}
+
+		return c;
+	}
+
 }
