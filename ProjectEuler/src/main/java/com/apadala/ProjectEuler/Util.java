@@ -3,6 +3,7 @@
  */
 package com.apadala.ProjectEuler;
 
+import java.math.BigInteger;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -31,6 +32,45 @@ public class Util {
 			return true;
 		return false;
 	}
+	/**
+	 * 
+	 * @param k
+	 * @return
+	 */
+	public static BigInteger factorial(int n) {
+		if (n < 0) {
+			throw new IllegalArgumentException("Primes are positive");
+		}
+		BigInteger product = BigInteger.ONE;
+		for (int i = 2; i <= n; i++) {
+			product = product.multiply(BigInteger.valueOf(i));
+
+		}
+		return product;
+	}
+	/**
+	 * 
+	 * @param k
+	 * @param j
+	 * @return
+	 */
+	public static BigInteger binomialCoefficient(int k, int j) {
+		if (j < 0 || j > k)
+			throw new IllegalArgumentException();
+		BigInteger fs = BigInteger.ONE;
+
+		for (int i = 0; i < j; i++) {
+
+			fs = fs.multiply(BigInteger.valueOf(k - i));
+		}
+		return fs.divide(factorial(j));
+	}
+	/**
+	 * 
+	 * @param n
+	 * @param k
+	 * @return
+	 */
 
 	/**
 	 * 
@@ -86,7 +126,7 @@ public class Util {
 		return true;
 
 	}
-	public static long SumOfN(long n) {
+	public static long sumOfN(long n) {
 		return (n * (n + 1) / 2);
 	}
 	public static Long factorsOfN(long n) {
