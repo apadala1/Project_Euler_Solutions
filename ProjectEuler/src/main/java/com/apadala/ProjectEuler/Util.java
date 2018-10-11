@@ -65,12 +65,6 @@ public class Util {
 		}
 		return fs.divide(factorial(j));
 	}
-	/**
-	 * 
-	 * @param n
-	 * @param k
-	 * @return
-	 */
 
 	/**
 	 * 
