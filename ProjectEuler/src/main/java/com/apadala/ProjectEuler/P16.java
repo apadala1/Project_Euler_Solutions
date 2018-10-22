@@ -11,10 +11,8 @@ import java.math.BigInteger;
  */
 public class P16 implements PEuler {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.apadala.ProjectEuler.PEuler#Solution()
+	/*(non-Javadoc)**
+	@see com.apadala.ProjectEuler.PEuler#Solution()
 	 */
 	public String Solution() {
 

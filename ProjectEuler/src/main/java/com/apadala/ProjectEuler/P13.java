@@ -1,7 +1,11 @@
 package com.apadala.ProjectEuler;
 
 import java.math.BigInteger;
-
+/**
+ * 
+ * @author Akhileshwar.Padala
+ *
+ */
 public final class P13 implements PEuler {
 
 	public String Solution() {

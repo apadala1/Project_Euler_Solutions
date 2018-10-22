@@ -5,7 +5,7 @@ package com.apadala.ProjectEuler;
 
 /**
  * @author Akhileshwar.Padala
- *
+ * 
  */
 public class P15 implements PEuler {
 
