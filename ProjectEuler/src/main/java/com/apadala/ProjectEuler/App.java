@@ -6,7 +6,7 @@ package com.apadala.ProjectEuler;
  */
 public class App {
 
-	static int n = 766;
+	static int n = 764;
 	public static void main(String[] args) {
 		long lStartTime = System.nanoTime();
 
@@ -24,10 +24,6 @@ public class App {
 				cls = Class.forName(fullPathOfTheClass);
 				PEuler myTestObject = (PEuler) cls.newInstance();
 				System.out.println(myTestObject.Solution());
-				long lEndTime = System.nanoTime();
-				long output = lEndTime - lStartTime;
-				System.out.println("\nElapsed time in sec: "
-						+ (double) output / 1000000000);
 			} catch (Exception e) {
 
 				long lEndTime = System.nanoTime();
